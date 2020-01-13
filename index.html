@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>대한민국 국회</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/chart.css">
+    <link rel="stylesheet" href="css/simple-calendar.css">
+    <link rel="stylesheet" href="css/stylepc.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/GaugeMeter.js"></script>
+    <script src="js/jquery.simple-calendar.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <p class="menuBg"></p>
+        <div class="menu">
+            <ul id="nav">
+                <li>
+                    <a href="#" class="active">국민국회활동</a>
+                    <ul class="sub sub1">
+                        <li>
+                            <a href="#">국회회의 <img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">의사일정</a></li>
+                                <li><a href="#">회의록</a></li>
+                                <li><a href="#">인터넷의사중계&middot;영상회의록</a></li>
+                                <li><a href="#">국회경과보고서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">법률안<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">의안정보·입법예고</a></li>
+                                <li><a href="#">법률안처리과정</a></li>
+                                <li><a href="#">맞춤서비스안내</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">예산안과 결산<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">예산안과 결산 현황</a></li>
+                                <li><a href="#">예산안과 결산 처리과정</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국정감사<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">국정감사계획서</a></li>
+                                <li><a href="#">국정감사처리과정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">위원회<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">위원회 현황</a></li>
+                                <li><a href="#">위원회 공지</a></li>
+                                <li><a href="#">공시송달</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회공보</a>
+
+                        </li>
+                        <li>
+                            <a href="#">친&middot;인척 보좌직원 현황</a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">의원활동</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">국회의장<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">국회의장 소개</a></li>
+                                <li><a href="#">주요동정</a></li>
+                                <li><a href="#">주요일정</a></li>
+                                <li><a href="#">대변인실</a></li>
+                                <li><a href="#">보도자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회부의장<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">국회부의장 소개</a></li>
+                                <li><a href="#">주요일정</a></li>
+                                <li><a href="#">주요동정</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회의원현황</a>
+
+                        </li>
+                        <li>
+                            <a href="#">의원실행사</a>
+
+                        </li>
+                        <li>
+                            <a href="#">의원실채용</a>
+
+                        </li>
+                        <li>
+                            <a href="#">의원연구단체<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">연구단체 소개</a></li>
+                                <li><a href="#">연구단체 등록 현황</a></li>
+                                <li><a href="#">연구활동비 집행 현황</a></li>
+                                <li><a href="#">연구활동 보고서</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">의회외교</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">의회외교포럼<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">의회외교포럼 구성</a></li>
+                                <li><a href="#">포럼 활동보고</a></li>
+                                <li><a href="#">국제현안 분석</a></li>
+                                <li><a href="#">보도 및 사진자료</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">의원외교단체<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">의원외교단체 소개</a></li>
+                                <li><a href="#">의원외교단체 현황</a></li>
+                                <li><a href="#">의원외교단체 활동보고</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">의원외교활동</a>
+
+                        </li>
+                        <li>
+                            <a href="#">국제회의<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">- 유라시아 국회의장회의</a></li>
+                                <li><a href="#">- 믹타(MIKTA) 국회의장회의</a></li>
+                                <li><a href="#">- 국제의회연맹(IPU)</a></li>
+                                <li><a href="#">- 아시아태평양 의회포럼(APPF)</a></li>
+                                <li><a href="#">- 기타 국제회의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">알림마당</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">보도자료<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">국회의장</a></li>
+                                <li><a href="#">국회사무처</a></li>
+                                <li><a href="#">국회도서관</a></li>
+                                <li><a href="#">국회예산정책처</a></li>
+                                <li><a href="#">국회입법조사처</a></li>
+                                <li><a href="#">위원회</a></li>
+                                <li><a href="#">국회미래연구원</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">행사알림<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">문화행사</a></li>
+                                <li><a href="#">정책행사</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회매거진<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">국회보</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회정보서비스<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">운영 사이트</a></li>
+                                <li><a href="#">모바일 서비스</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정책참고자료실<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">국회사무처 법제정보</a></li>
+                                <li><a href="#">자문위원회 결과보고서</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">분실물 안내</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">소통마당</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">국회민원<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">민원안내</a></li>
+                                <li><a href="#">민원신청</a></li>
+                                <li><a href="#">민원현황</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국민참관<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">국회참관안내</a></li>
+                                <li><a href="#">국회방청안내</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">의정연수<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">의정연수안내</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">정보공개</a>
+                        </li>
+                        <li>
+                            <a href="#">국민제안</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">국회소개</a>
+                    <ul class="sub">
+                        <li>
+                            <a href="#">국회의 구성<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">국회의장단</a></li>
+                                <li><a href="#">국회의원</a></li>
+                                <li><a href="#">위원회</a></li>
+                                <li><a href="#">교섭단체</a></li>
+                                <li><a href="#">입법지원조직</a></li>
+                                <li><a href="#">조직도</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회가 하는 일<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">역할과 권한</a></li>
+                                <li><a href="#">국회의 회기</a></li>
+                                <li><a href="#">본회의 소개</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회의 역사<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">역대국회 소개</a></li>
+                                <li><a href="#">국회의사당 변천</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회의 이모저모<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">국회 건축</a></li>
+                                <li><a href="#">예술 작품</a></li>
+                                <li><a href="#">산책로</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">국회자료실<img src="images/select_more.png" alt="more"></a>
+                            <ul class="sub2">
+                                <li><a href="#">홍보간행물</a></li>
+                                <li><a href="#">국회상징(AI)</a></li>
+                                <li><a href="#">이미지자료실</a></li>
+                                <li><a href="#">서식자료실</a></li>
+                                <li><a href="#">영상자료실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">연락처 안내</a>
+
+                        </li>
+                        <li>
+                            <a href="#">찾아오는 길</a>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="search">
+                <input type="text">
+                <p class="searchBtn"><a href="#"><img src="images/btn_search.png" alt="검색"></a></p>
+            </form>
+        </div>
+        <p class="fixBg"></p>
+        <div class="fix">
+            <div class="icon">
+                <p class="ham"><a href="#"></a></p>
+                <p class="login"><a href="#"><img src="images/icon_login.png" alt="login"></a></p>
+                <p class="topBtn"><a href="#"><img src="images/btn_top.png" alt="top버튼"></a></p>
+            </div>
+        </div>
+
+
+
+        <div class="page page1">
+            <h1 class="logo"><a href="#"><img src="images/logo.svg" alt="대한민국 국회"></a></h1>
+            <div class="tabMenuWrap">
+                <div class="center">
+                   <p class="tabMain"><span></span><a href="#">법률안과 예결산</a></p>
+                    <ul class="tabMenu">
+                        <li class="active"><a href="#"><span></span>법률안과 예결산</a></li>
+                        <li><a href="#"><span></span>회의공개</a></li>
+                        <li><a href="#"><span></span>본회의 표결정보</a></li>
+                        <li><a href="#"><span></span>행사정보</a></li>
+                        <li><a href="#"><span></span>위원회</a></li>
+                    </ul>
+                    <p class="tabBg"></p>
+                </div>
+            </div>
+
+            <div class="banner banner1">
+                <div class="center">
+                    <ul class="quick">
+                        <li><a href="#">
+                                <img src="images/icon_v1_1.png" alt="의원정보" class="img1">
+                                <img src="images/icon_v1_1b.png" alt="의원정보" class="img2">
+                                <strong>의원정보</strong>
+                                <span>법류안,예결산등<br>모든 의안을 볼 수 있습니다.</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v1_2.png" alt="입법예고" class="img1">
+                                <img src="images/icon_v1_2b.png" alt="입법예고" class="img2">
+                                <strong>입법예고</strong>
+                                <span>회부된 법률안에 대하여<br>국민들의 의견을 받습니다.</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v1_3.png" alt="법률정보" class="img1">
+                                <img src="images/icon_v1_3b.png" alt="법률정보" class="img2">
+                                <strong>법률정보</strong>
+                                <span>각종 법령정보를<br>제공합니다.</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v1_4.png" alt="예결산" class="img1">
+                                <img src="images/icon_v1_4b.png" alt="예결산" class="img2">
+                                <strong>예결산</strong>
+                                <span>예산결산 심사현황을<br>확인할 수 있습니다.</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner banner2">
+                <div class="center">
+                    <p class="bText"><img src="images/v_text.png" alt="국민에게 힘이되는 국회"></p>
+                    <ul class="quick">
+                        <li><a href="#">
+                                <img src="images/icon_v2_1.png" alt="인터넷 의사중계" class="img1">
+                                <img src="images/icon_v2_1b.png" alt="인터넷 의사중계" class="img2">
+                                <strong>인터넷 의사중계</strong>
+                                <span>국회의 회의를<br>실시간으로 중계합니다.</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v2_2.png" alt="영상회의록" class="img1">
+                                <img src="images/icon_v2_2b.png" alt="영상회의록" class="img2">
+                                <strong>영상회의록</strong>
+                                <span>지난 회의영상을<br>다시 볼 수 있습니다.</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v2_3.png" alt="회의록" class="img1">
+                                <img src="images/icon_v2_3b.png" alt="회의록" class="img2">
+                                <strong>회의록</strong>
+                                <span>국회의 모든 회의기록을<br>볼 수 있습니다.</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v2_4.png" alt="국회방송" class="img1">
+                                <img src="images/icon_v2_4b.png" alt="국회방송" class="img2">
+                                <strong>국회방송</strong>
+                                <span>회의영상 및 다양한<br>프로그램을 제공합니다.</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner banner3">
+                <div class="center">
+                    <div class="vote">
+                        <h2 class="title">본회의 표결정보</h2>
+                        <p class="voteTop"><span>원안가결</span><span>재석:190/재적:295</span></p>
+                        <div class="voteCircle">
+                            <p class="voteTitle">주택법 일부<br>개정 법률안(대안)<br>2019.11.19</p>
+                            <div class="GaugeMeter" data-percent="90" data-size="350" data-width="60" data-color="#2b61a0" data-stripe="0">
+                            </div>
+                        </div>
+                        <div class="percent">
+                            <p><span>찬성(189)</span><span class="circle circle1"></span></p>
+                            <p><span>반대(0)</span><span class="circle circle2"></span></p>
+                            <p><span>기권(1)</span><span class="circle circle3"></span></p>
+                        </div>
+                        <p class="more1"><a href="#">바로가기</a></p>
+                    </div>
+                    <ul class="quick">
+                        <li><a href="#">
+                                <img src="images/icon_v3_1.png" alt="의안별" class="img1">
+                                <img src="images/icon_v3_1b.png" alt="의안별" class="img2">
+                                <strong>의안별</strong>
+                                <span>의안별 표결정보를<br>볼 수 있습니다.</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v3_2.png" alt="의원별" class="img1">
+                                <img src="images/icon_v3_2b.png" alt="의원별" class="img2">
+                                <strong>의원별</strong>
+                                <span>의원별 표결정보를<br>볼 수 있습니다.</span>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="banner banner4">
+                <div class="center">
+                    <div class="event">
+                        <div id="cal"></div>
+                        <div class="eventList">
+                            <h2>12.02</h2>
+                            <p class="subTitle">행사명</p>
+                            <ul>
+                                <li><a href="#">- 방정환 세계화를 위한 정책포럼
+                                    </a></li>
+                                <li><a href="#">- 바른인권여성 연합 창립 기념...</a></li>
+                                <li><a href="#">-김산업 진흥에 관한 법률안 입법...
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="quick">
+                        <li><a href="#">
+                                <img src="images/icon_v4_1.png" alt="의원실행사" class="img1">
+                                <img src="images/icon_v4_1b.png" alt="의원실행사" class="img2">
+                                <strong>의원실행사</strong>
+                                <span>각 의원실에서<br>주최하는 행사정보</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v4_2.png" alt="국회 기관 행사" class="img1">
+                                <img src="images/icon_v4_2b.png" alt="국회 기관 행사" class="img2">
+                                <strong>국회 기관 행사</strong>
+                                <span>국회가관에서<br>주최하는 행사정보</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_v4_3.png" alt="국회의원 정책자료" class="img1">
+                                <img src="images/icon_v4_3b.png" alt="국회의원 정책자료" class="img2">
+                                <strong>국회의원 정책자료</strong>
+                                <span>의원실에서 주최한<br>세미나 관련자료</span>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="banner banner5">
+                <div class="center">
+                    <div class="quickMore">
+                        <a href="#">
+                            <span><img src="images/icon_color_3.svg" alt="전체위원회소개"></span>
+                            <span class="qTitle">전체위원회소개</span>
+                            <span class="more2">바로가기</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="page page2">
+            <div class="center">
+                <div class="pTop">
+                    <p><img src="images/slogan.png" alt="국민에게 힘이되는 국회"></p>
+                    <div class="notices">
+                        <div class="notice">
+                            <h2>공지사항</h2>
+                            <ul>
+                                <li><a href="#">- 국회방송 주간편성표(12월 2일~12...</a></li>
+                                <li><a href="#">- 기자회견 일정(2일, 월)</a></li>
+                                <li><a href="#">- 국회 직영식당 음식물쓰레기 위탁처리...</a></li>
+                            </ul>
+                        </div>
+                        <div class="notice2">
+                            <h2>보도자료</h2>
+                            <ul>
+                                <li><a href="#">- 현진권 국회도서관장 임명</a></li>
+                                <li><a href="#">- [보도참고자료] 주간 의안접수현황...</a></li>
+                                <li><a href="#">- [보도해명자료] 국회입법조사처...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pBottom">
+                    <ul>
+                        <li><a href="#">
+                                <img src="images/icon_color_1.svg" alt="인터넷 의사중계">
+                                <strong>인터넷 의사중계</strong>
+                                <span>국회의 회의를 실시간으로 중계합니다</span>
+                                <span class="click">click</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_color_2.svg" alt="국회관람">
+                                <strong>국회관람</strong>
+                                <span>국회의 회의를 실시간으로 중계합니다</span>
+                                <span class="click">click</span>
+                            </a></li>
+                        <li class="active"><a href="#">
+                                <img src="images/icon_color_3.svg" alt="국회의원">
+                                <strong>국회의원</strong>
+                                <span>국회의원 정보가 궁금하신가요?</span>
+                                <span class="click">click</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_color-_4.svg" alt="국회민원">
+                                <strong>국회민원</strong>
+                                <span>진정을 통해 국민의 민원을 받습니다</span>
+                                <span class="click">click</span>
+                            </a></li>
+                        <li><a href="#">
+                                <img src="images/icon_color_5.svg" alt="국회 문화행사">
+                                <strong>국회 문화행사</strong>
+                                <span>문화행사 예약 신청을 하실 수 있습니다
+                                </span>
+                                <span class="click">click</span>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page page3">
+            <div class="center">
+                <h2 class="subLogo"><a href="#"><img src="images/news_logo.jpg" alt="국회뉴스on"></a></h2>
+                <div class="youtube">
+                    <div class="bigWrap">
+                        <div class="big big1">
+                            <iframe src="https://www.youtube.com/embed/HSDn7AQakaA" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="big big2">
+                            <iframe src="https://www.youtube.com/embed/YtMQbhRdSus" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="big big3">
+                            <iframe src="https://www.youtube.com/embed/L0EFhhVNQhI" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <ul class="thum">
+                        <li class="active"><a href="#"><span>01</span><img src="images/thum1.jpg" alt="현대판 사관"></a></li>
+                        <li><a href="#"><span>02</span><img src="images/thum2.jpg" alt="2차 국정감사"></a></li>
+                        <li><a href="#"><span>03</span><img src="images/thum3.jpg" alt="20대에게 물어본"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page page4">
+            <div class="center">
+                <div class="p4Top">
+                    <div class="notice3">
+                        <h3>의사결정</h3>
+                        <ul>
+                            <li><a href="#">- <span>위원회</span> [보건복지위원회] 전체회의</a></li>
+                            <li><a href="#">- <span>위원회</span> [외교통일위원회] 전체회의</a></li>
+                            <li><a href="#">- <span>위원회</span> [외교통일위원회] 법안심사 소위원회</a></li>
+                        </ul>
+                    </div>
+                    <div class="notice4">
+                        <h3>주요정치일정</h3>
+                        <ul>
+                            <li><a href="#"><span>- 주요정치일정(12.2)-월요일</span><span>2019-12-02</span></a></li>
+                            <li><a href="#"><span>- 주요정치일정(11.29)-금요일</span><span>2019-11-29</span></a></li>
+                            <li><a href="#"><span>- 주요정치일정(11.28)-목요일</span><span>2019-11-28</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="notice5">
+                        <h3>국회의장 주요동정</h3>
+                        <ul>
+                            <li><a href="#"><span>- 국회 생생텃밭 김장행사참석 </span><span>2019-12-02</span></a></li>
+                            <li><a href="#"><span>- 사랑의 열매 희망나눔캠페인...</span><span>2019-11-29</span></a></li>
+                            <li><a href="#"><span>- 응웬 쑤언 푹 베트남 총리 면담</span><span>2019-11-28</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="center">
+                    <div class="family">
+                        <a href="#">국회사무처</a>
+                        <div class="over">
+                            <ul>
+                                <li><a href="#">국회사무처</a></li>
+                                <li><a href="#">국회도서관</a></li>
+                                <li><a href="#">국회예산정책처</a></li>
+                                <li><a href="#">국회입법조사처</a></li>
+                                <li><a href="#">국회미래연구원</a></li>
+                                <li><a href="#">국회뉴스ON</a></li>
+                                <li><a href="#">국회방송</a></li>
+                                <li><a href="#">국회의정연수원</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="sns">
+                        <li><a href="#"><img src="images/sns_1.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/sns_2.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/sns_3.png" alt="rss"></a></li>
+                    </ul>
+                    <ul class="footMenu">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">개인정보파일목록</a></li>
+                        <li><a href="#">홈페이지이용약관</a></li>
+                        <li><a href="#">저작권정책</a></li>
+                        <li><a href="#">뷰어다운로드</a></li>
+                    </ul>
+                    <address>
+                        <p>서울시 영등포구 의사당대로 1 (여의도동) 07233 대표전화 : 02-788-2114 홈페이지 문의 : webmaster@assembly.go.kr</p>
+                        <p>Copyright© National Assembly. All rights reserved. 대한민국국회 홈페이지의 모든 정보에 대한 권한은 국회에 있습니다.</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
