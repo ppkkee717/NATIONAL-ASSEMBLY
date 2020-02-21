@@ -1,6 +1,7 @@
+
 #wrap {
     width: 100%;
-    min-width: 1600px;
+    min-width: 1400px;
     /*    height: 100vh;*/
     background-color: darkseagreen;
     position: relative;
@@ -210,10 +211,10 @@
 .center {
     position: relative;
     width: calc(100% - 150px);
-    min-width: 1600px;
+/*    min-width: 1600px;*/
     left: 0;
     height: 100vh;
-    /*    background-color: antiquewhite;*/
+/*        background-color: antiquewhite;*/
 }
 
 /*================================tabMenu*/
@@ -294,8 +295,10 @@
 
 .quick {
     position: absolute;
-    right: 150px;
-    top: 200px;
+    right: 5vw;
+/*    top: 10vh;*/
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 999;
 }
 
@@ -383,12 +386,12 @@
 
 .vote {
     position: relative;
-    left: 25vw;
-    width: 550px;
-    height: 500px;
-    top: 200px;
+    left: 22vw;
+    width: 500px;
+    height: 450px;
+    top: 22vh;
     background: white;
-    padding: 50px;
+    padding: 40px;
     box-sizing: border-box;
     box-shadow: 7px 7px #2b61a0;
     z-index: 9995;
@@ -498,11 +501,12 @@
 
 .event {
     position: absolute;
-    top: 200px;
+    top: 50%;
+    transform: translateY(-50%);
     width: 780px;
     height: 431px;
     background: white;
-    left: 20%;
+    left:10vw;
     font-family: "Nanum Square", "NanumSquare", sans-serif;
     z-index: 9996;
 }
@@ -657,7 +661,7 @@
 
 .pBottom ul {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 15vh;
     width: 100%;
 }
 
@@ -720,19 +724,23 @@
     position: relative;
     float: left;
     display: none;
-    margin-left: 12vw;
+    margin-left: 10vw;
     margin-top: 5vh;
+/*
     width: 980px;
     height: 549px;
+*/
     z-index: 999;
-    /*
+/*
+    
     width: 100%;
     padding-bottom: 56.25%;
 */
-    /*
+
+    
     width: 56%;
     padding-bottom: 31.5%
-*/
+
 
 }
 
@@ -749,7 +757,8 @@
 .thum {
 
     float: left;
-    width: 325px;
+/*    width: 325px;*/
+    width: 18.65%;
     margin-top: 5vh;
 }
 
@@ -763,10 +772,12 @@
     display: none;
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
-    width: 325px;
-    height: 183px;
+/*    width: 325px;*/
+     width: 18.65%;
+/*    height: 183px;*/
+    height: 19%;
     text-align: right;
-    line-height: 183px;
+    line-height: 4;
     padding-right: 40px;
     box-sizing: border-box;
     font-size: 40px;
